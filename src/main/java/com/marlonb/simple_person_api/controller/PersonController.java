@@ -10,10 +10,9 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/person-information")
 public class PersonController {
 
-    @GetMapping("/test")
+    @RequestMapping("/person-information")
     public List<Person> retrieveAllPersonData () {
         return Arrays.asList(new Person(1, "FirstName1 LastName1", "user1@gmail.com", "09123456789"),
                              new Person(2, "FirstName2 LastName2", "user2@gmail.com", "09987654321"));
